@@ -1,5 +1,5 @@
 {
-    "name": "botman/driver-wechat",
+    "name": "musoftware/driver-wechat",
     "license": "MIT",
     "description": "WeChat driver for BotMan",
     "keywords": [
@@ -7,7 +7,7 @@
         "BotMan",
         "WeChat"
     ],
-    "homepage": "http://github.com/botman/driver-wechat",
+    "homepage": "http://github.com/musoftware/driver-wechat",
     "authors": [
         {
             "name": "Marcel Pociot",
