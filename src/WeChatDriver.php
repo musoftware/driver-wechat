@@ -65,7 +65,7 @@ class WeChatDriver extends HttpDriver implements VerifiesService
      */
     public function getUser(IncomingMessage $matchingMessage)
     {
-        $response = $this->http->post('https://api.wechat.com/cgi-bin/user/info?access_token='.$this->getAccessToken().'&openid='.$matchingMessage->getRecipient().'&lang=en_US',
+        $response = $this->http->post('https://api.wechat.com/cgi-bin/user/info?access_token='.$this->getAccessToken().'&openid='.$matchingMessage->getSender().'&lang=en_US',
             [], [], [], true);
         $responseData = json_decode($response->getContent());
 
